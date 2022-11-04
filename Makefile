@@ -4,6 +4,7 @@
 
 DOCKER_COMPOSE = docker-compose -f ./docker/docker-compose.yml --env-file ./docker/.env
 DOCKER_COMPOSE_PHP_FPM_EXEC = ${DOCKER_COMPOSE} exec -u www-data php-fpm
+APP_URL = 127.0.0.1:888
 
 ##################
 # Docker compose
@@ -49,6 +50,8 @@ jwt:
 cache:
 	docker-compose -f ./docker/docker-compose.yml exec -u www-data php-fpm bin/console cache:clear
 	docker-compose -f ./docker/docker-compose.yml exec -u www-data php-fpm bin/console cache:clear --env=test
+check:
+	curl ${APP_URL}
 
 ##################
 # Database
