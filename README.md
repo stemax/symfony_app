@@ -12,7 +12,8 @@
 - [X] Docker PHP & Nginx
 - [X] [Create Symfony Application](https://symfony.com/doc/current/setup.html)
 
-### Usefull commands for this part (Most of these in Makefile):
+### Usefull commands for this part 
+(Most of these in Makefile):
  - id $USER; sudo chown -R www-data:www-data /var/log/nginx; sudo chmod -R 755 /var/log/nginx;
  - docker-compose -f ./docker/docker-compose.yml build
  - docker-compose -f ./docker/docker-compose.yml up
