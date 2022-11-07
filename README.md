@@ -47,3 +47,17 @@
 
 ### useful commands
 - mkdir Domain Application Infrastructure
+
+### Databases and the Doctrine ORM
+
+- [X] [Installing Doctrine](https://symfony.com/doc/current/doctrine.html)
+- [X] [Setting up a Database](https://symfony.com/doc/current/the-fast-track/en/7-database.html)
+- [X] [Mapping](https://www.doctrine-project.org/projects/doctrine-orm/en/current/reference/xml-mapping.html)
+- [X] [Migrations](https://symfony.com/doc/current/doctrine.html#migrations-creating-the-database-tables-schema)
+- [X] [Repository](https://symfony.com/doc/current/doctrine.html#querying-for-objects-the-repository)
+- [X] [Database Testing](https://symfony.com/doc/current/testing/database.html)
+- [X] [Fixtures](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html)
+
+### useful commands
+- composer require symfony/orm-pack
+- 
