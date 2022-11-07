@@ -29,3 +29,13 @@
 - make app_bash
 - php -m
 - make check
+
+## PHP Unit Testing
+- [X] [Install PHPUnit](https://symfony.com/doc/current/testing.html#the-phpunit-testing-framework)
+- [X] [Integrate PHPUnit with a PhpStorm project](https://symfony.com/doc/current/testing.html#the-phpunit-testing-framework)
+
+### useful commands
+- composer require --dev phpunit/phpunit symfony/test-pack
+- sudo apt install php-xml
+- sudo apt-get install php-mbstring
+
