@@ -60,4 +60,11 @@
 
 ### useful commands
 - composer require symfony/orm-pack
-- 
+- docker ps
+- docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' [container_id] #get ip for conteiner
+- composer require symfony/uid
+- php bin/console doctrine:schema:validate
+- php bin/console doctrine:migrations:diff
+- apt-get install php-pgsql
+- php bin/console doctrine:migrations:migrate
+- composer require fakerphp/faker
