@@ -38,4 +38,12 @@
 - composer require --dev phpunit/phpunit symfony/test-pack
 - sudo apt install php-xml
 - sudo apt-get install php-mbstring
+- composer require --dev symfony/phpunit-bridge
 
+### Clean Architecture
+
+- [X] [Onion Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+- [X] [Monolith First](https://martinfowler.com/bliki/MonolithFirst.html)
+
+### useful commands
+- mkdir Domain Application Infrastructure
