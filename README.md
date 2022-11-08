@@ -68,3 +68,7 @@
 - apt-get install php-pgsql
 - php bin/console doctrine:migrations:migrate
 - composer require fakerphp/faker
+- composer require --dev orm-fixtures
+- php bin/console doctrine:fixtures:load  --env=test
+- [composer require --dev liip/test-fixtures-bundle:^2.0.0](https://github.com/liip/LiipTestFixturesBundle/blob/2.x/doc/installation.md)
+- composer require --dev dama/doctrine-test-bundle
