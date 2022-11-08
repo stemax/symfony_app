@@ -47,3 +47,28 @@
 
 ### useful commands
 - mkdir Domain Application Infrastructure
+
+### Databases and the Doctrine ORM
+
+- [X] [Installing Doctrine](https://symfony.com/doc/current/doctrine.html)
+- [X] [Setting up a Database](https://symfony.com/doc/current/the-fast-track/en/7-database.html)
+- [X] [Mapping](https://www.doctrine-project.org/projects/doctrine-orm/en/current/reference/xml-mapping.html)
+- [X] [Migrations](https://symfony.com/doc/current/doctrine.html#migrations-creating-the-database-tables-schema)
+- [X] [Repository](https://symfony.com/doc/current/doctrine.html#querying-for-objects-the-repository)
+- [X] [Database Testing](https://symfony.com/doc/current/testing/database.html)
+- [X] [Fixtures](https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html)
+
+### useful commands
+- composer require symfony/orm-pack
+- docker ps
+- docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' [container_id] #get ip for conteiner
+- composer require symfony/uid
+- php bin/console doctrine:schema:validate
+- php bin/console doctrine:migrations:diff
+- apt-get install php-pgsql
+- php bin/console doctrine:migrations:migrate
+- composer require fakerphp/faker
+- composer require --dev orm-fixtures
+- php bin/console doctrine:fixtures:load  --env=test
+- [composer require --dev liip/test-fixtures-bundle:^2.0.0](https://github.com/liip/LiipTestFixturesBundle/blob/2.x/doc/installation.md)
+- composer require --dev dama/doctrine-test-bundle
