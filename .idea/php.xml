@@ -93,6 +93,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/liip/test-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/dama/doctrine-test-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/messenger" />
     </include_path>
   </component>
   <component name="PhpInterpreters">
