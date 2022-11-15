@@ -1,5 +1,3 @@
-
-
 <?php
 
 namespace App\Tests\Functional\Users\Application\Query\FindUserByEmail;
