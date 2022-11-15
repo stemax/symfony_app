@@ -79,3 +79,11 @@
 
 ### useful commands
 ```composer require symfony/messenger```
+
+## Auth (JWT) 2 Bundels
+
+```composer require "lexik/jwt-authentication-bundle"```
+```composer require doctrine/orm doctrine/doctrine-bundle gesdinet/jwt-refresh-token-bundle```
+```php bin/console doctrine:migrations:migrate -n```
+```php bin/console lexik:jwt:generate-keypair```
+```composer require webmozart/assert```

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Resource\Fixture\Users;
+namespace Resource\Fixture\Users;
 
 use App\Tests\Tools\FakerTools;
 use App\Users\Domain\Factory\UserFactory;
@@ -11,24 +11,24 @@ use Doctrine\Persistence\ObjectManager;
 
 class UserFixture extends Fixture
 {
-    use FakerTools;
+  use FakerTools;
 
-    public const REFERENCE = 'user';
+  public const REFERENCE = 'user';
 
-    public function __construct(private readonly UserFactory $userFactory)
-    {
-    }
+  public function __construct(private readonly UserFactory $userFactory)
+  {
+  }
 
-    public function load(ObjectManager $manager): void
-    {
-        $email = $this->getFaker()->email();
+  public function load(ObjectManager $manager): void
+  {
+    $email = $this->getFaker()->email();
 
-        $password = $this->getFaker()->password();
-        $user = $this->userFactory->create($email, $password);
+    $password = $this->getFaker()->password();
+    $user = $this->userFactory->create($email, $password);
 
-        $manager->persist($user);
-        $manager->flush();
+    $manager->persist($user);
+    $manager->flush();
 
-        $this->addReference(self::REFERENCE, $user);
-    }
+    $this->addReference(self::REFERENCE, $user);
+  }
 }
